@@ -15,7 +15,7 @@ export default function MenuModal({ onClose }: MenuModalProps) {
         onClick={(e) => e.stopPropagation()} // Prevent backdrop click from closing modal
       >
         {/* <h2 className="text-lg font-semibold mb-4">Menu</h2> */}
-        <ul className="space-y-6">
+        <ul className="space-y-8">
           <li className="cursor-pointer hover:text-blue-500 flex items-center w-full gap-4">
             Home <div className="w-full h-[1.5px] bg-gray-500 rounded-full " />
           </li>

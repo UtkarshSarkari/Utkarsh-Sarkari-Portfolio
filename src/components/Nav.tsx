@@ -1,25 +1,14 @@
 "use client";
 import React, { useState } from "react";
 import { navLinks } from "@/constants/navLinks";
-import {
-  // font1,
-  // font2,
-  // font3,
-  // font4,
-  // font5,
-  // font10,
-  // font11,
-  // font12,
-  font13,
-  // font14,
-  // font6,
-  // font7,
-  // font8,
-  // font9,
-} from "@/constants/fontData";
+import { font13 } from "@/constants/fontData";
 import Image from "next/image";
 
-export default function Nav() {
+interface NavProps {
+  onMenuClick: () => void;
+}
+
+export default function Nav({ onMenuClick }: NavProps) {
   const [activeLink, setActiveLink] = useState("Home");
 
   return (
@@ -46,7 +35,14 @@ export default function Nav() {
         </h5>
       </div>
       <div className="hamMenu lg:hidden">
-        <Image className="" src="/icons/menu5.png" height={38} width={38} alt="hamMenu" />
+        <Image
+          className=""
+          src="/icons/menu5.png"
+          height={38}
+          width={38}
+          alt="hamMenu"
+          onClick={onMenuClick}
+        />
       </div>
     </div>
   );

@@ -1,11 +1,15 @@
+'use client'
+import { useState } from "react";
 import Nav from "@/components/Nav";
-// import Hero from "@/pages/Hero";
+import MenuModal from "@/components/menuModal";
 
 export default function Home() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <div>
-      <Nav />
-      {/* <Hero /> */}
-    </div>
+    <main className="relative">
+      <Nav onMenuClick={() => setIsMenuOpen(true)} />
+      {isMenuOpen && <MenuModal onClose={() => setIsMenuOpen(false)} />}
+    </main>
   );
 }

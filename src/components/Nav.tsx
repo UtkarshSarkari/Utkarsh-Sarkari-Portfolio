@@ -29,7 +29,7 @@ export default function Nav({ onMenuClick }: NavProps) {
           </div>
         ))}
         <h5
-          className={`text-zinc-300 tracking-wider font-light hover:text-white transition-all cursor-pointer bg-white/15 px-3 py-1 rounded-lg`}
+          className={`text-zinc-300 tracking-wider font-light hover:text-white transition-all cursor-pointer bg-white/15 px-3 py-1 rounded-lg flex items-center justify-center`}
         >
           utkrshsarkari@gmail.com
         </h5>

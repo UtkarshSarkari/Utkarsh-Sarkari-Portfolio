@@ -1,5 +1,5 @@
 import Nav from "@/components/Nav";
-import Hero from "@/pages/Hero";
+// import Hero from "@/pages/Hero";
 
 export default function Home() {
   return (

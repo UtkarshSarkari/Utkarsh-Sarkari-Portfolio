@@ -2,20 +2,20 @@
 import React, { useState } from "react";
 import { navLinks } from "@/constants/navLinks";
 import {
-  font1,
-  font2,
-  font3,
-  font4,
-  font5,
-  font10,
-  font11,
-  font12,
+  // font1,
+  // font2,
+  // font3,
+  // font4,
+  // font5,
+  // font10,
+  // font11,
+  // font12,
   font13,
-  font14,
-  font6,
-  font7,
-  font8,
-  font9,
+  // font14,
+  // font6,
+  // font7,
+  // font8,
+  // font9,
 } from "@/constants/fontData";
 import Image from "next/image";
 

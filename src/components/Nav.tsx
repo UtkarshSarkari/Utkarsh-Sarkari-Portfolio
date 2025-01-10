@@ -46,7 +46,7 @@ export default function Nav() {
         </h5>
       </div>
       <div className="hamMenu lg:hidden">
-        <Image className="" src="/icons/menu5.png" height={40} width={40} alt="hamMenu" />
+        <Image className="" src="/icons/menu5.png" height={38} width={38} alt="hamMenu" />
       </div>
     </div>
   );

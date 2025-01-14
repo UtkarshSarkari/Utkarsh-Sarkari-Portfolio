@@ -13,7 +13,7 @@ export default function Nav({ onMenuClick }: NavProps) {
 
   return (
     <div className="flex items-center justify-between px-8 lg:px-14 py-8 w-screen">
-      <div className={`left-nav ${font13.className}`}>Utkarsh Sarkari</div>
+      <div className={`left-nav text-white ${font13.className}`}>Utkarsh Sarkari</div>
       <div
         className={`right-nav font-[family-name:var(--font-geist-sans)] lg:flex items-center gap-10 text-sm hidden `}
       >

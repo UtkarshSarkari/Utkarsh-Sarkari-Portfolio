@@ -17,7 +17,7 @@ export default function Hero() {
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      const card = document.querySelector(".this-div");
+      const card = document.querySelector(".this-div") as HTMLElement;
       if (!card) return;
       const { left, top } = card.getBoundingClientRect();
       mouseX.set(e.clientX - left);
@@ -29,14 +29,16 @@ export default function Hero() {
       mouseY.set(-gradientSize);
     };
 
-    const card = document.querySelector(".this-div");
-    card?.addEventListener("mousemove", handleMouseMove);
-    card?.addEventListener("mouseleave", handleMouseLeave);
+    const card = document.querySelector(".this-div") as HTMLElement;
+    if (card) {
+      card.addEventListener("mousemove", handleMouseMove);
+      card.addEventListener("mouseleave", handleMouseLeave);
 
-    return () => {
-      card?.removeEventListener("mousemove", handleMouseMove);
-      card?.removeEventListener("mouseleave", handleMouseLeave);
-    };
+      return () => {
+        card.removeEventListener("mousemove", handleMouseMove);
+        card.removeEventListener("mouseleave", handleMouseLeave);
+      };
+    }
   }, [mouseX, mouseY, gradientSize]);
 
   return (

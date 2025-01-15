@@ -28,9 +28,9 @@ export default function ExperienceCard({ logo }: ExperienceCardProps) {
         </div>
         <ul className="mt-5 text-sm flex flex-col gap-4">
           <li>
-            Collaborate with clients to gather detailed information about
-            structured data (Oracle and MSSQL databases) and unstructured data
-            (files and folders) for archiving.
+            Collaborate with clients to gather detailed information about <span className="">structured data (Oracle and MSSQL databases) and unstructured data
+            (files and folders)</span>
+             for archiving.
           </li>
           <li>
             Prepare comprehensive documentation that captures specifics of both

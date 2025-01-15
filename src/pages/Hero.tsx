@@ -43,7 +43,7 @@ export default function Hero() {
 
   return (
     <div className="w-screen pt-20 px-8 lg:px-0 lg:pt-40 flex items-center justify-center font-[family-name:var(--font-geist-sans)]">
-      <motion.div className="relative group flex flex-col lg:flex-row items-center justify-center w-[800px] gap-10 p-10 lg:p-20 rounded-xl shadow-2xl this-div border border-white/10 bg-white/5">
+      <motion.div className="relative group flex flex-col lg:flex-row items-center justify-center w-[800px] gap-10 p-10 lg:p-20 rounded-xl shadow-2xl this-div border border-white/10">
         {/* Spotlight Effect */}
         <motion.div
           className="absolute inset-0 z-10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
@@ -94,12 +94,7 @@ export default function Hero() {
             </div>
           </div>
           <div className="text-sm text-white/90 tracking-wide">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-            aspernatur amet animi voluptatibus aliquid maiores autem beatae
-            provident iure fuga? Vel asperiores, voluptate cum laborum quia iure
-            officiis vero labore iusto perspiciatis officia expedita fugit
-            maxime hic voluptates delectus voluptatem deserunt atque ex libero
-            saepe! Sapiente dolores iure asperiores eveniet.
+          As a <span className="highlight">Software Engineer</span>, I deliver high-impact web solutions with a focus on quality, scalability, and user experience. <span className="highlight">Proficient in the MERN stack</span>, I specialize in developing robust and user-centric applications that align with business goals and deliver measurable results, leveraging my expertise in full-stack development to create seamless and efficient solutions.
           </div>
           <div className="flex items-center gap-4">
             {socialLinksData.map((data) => (

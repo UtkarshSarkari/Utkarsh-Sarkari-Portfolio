@@ -24,7 +24,7 @@ export default function ExperienceCard({ logo }: ExperienceCardProps) {
         </div>
         <div className="flex flex-col lg:flex-row">
           <div className="highlight">Cognizant Technology Solutions &nbsp;</div>
-          <div className="text-white/50">| Dec, 2023 - Current</div>
+          <div className="text-white/60 text-sm lg:text-base">| Dec, 2023 - Current</div>
         </div>
         <ul className="mt-5 text-sm flex flex-col gap-4">
           <li>

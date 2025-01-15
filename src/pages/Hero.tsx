@@ -43,7 +43,7 @@ export default function Hero() {
 
   return (
     <div className="w-screen pt-20 px-8 lg:px-0 lg:pt-40 flex items-center justify-center font-[family-name:var(--font-geist-sans)]">
-      <motion.div className="relative group flex flex-col lg:flex-row items-center justify-center w-[800px] gap-10 p-10 lg:p-20 rounded-xl shadow-2xl this-div bg-transparent border border-white/10">
+      <motion.div className="relative group flex flex-col lg:flex-row items-center justify-center w-[800px] gap-10 p-10 lg:p-20 rounded-xl shadow-2xl this-div border border-white/10 bg-white/5">
         {/* Spotlight Effect */}
         <motion.div
           className="absolute inset-0 z-10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"

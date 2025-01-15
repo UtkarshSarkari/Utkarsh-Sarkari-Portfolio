@@ -9,16 +9,16 @@ type ExperienceCardProps = {
 export default function ExperienceCard({ logo }: ExperienceCardProps) {
   return (
     <div className="flex flex-col lg:flex-row items-center gap-5 lg:gap-10 mt-10 font-[family-name:var(--font-geist-sans)]">
-      <div className="">
+      <div className="hidden lg:flex">
         <Image
-          className="w-[300px]"
+          className=""
           src={logo}
           height={300}
           width={300}
           alt="logo"
         />
       </div>
-      <div className="">
+      <div className="border border-white/10 bg-white/5 rounded-lg p-8 shadow-2xl lg:border-none lg:bg-transparent lg:shadow-none">
         <div className="text-lg font-semibold tracking-wide">
           Programmer Analyst
         </div>

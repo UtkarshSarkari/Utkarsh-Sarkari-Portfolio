@@ -1,11 +1,22 @@
 import Image from "next/image";
+import type { StaticImageData } from "next/image";
 import React from "react";
 
-export default function ExperienceCard({ logo }) {
+type ExperienceCardProps = {
+  logo: string | StaticImageData;
+};
+
+export default function ExperienceCard({ logo }: ExperienceCardProps) {
   return (
     <div className="flex flex-col lg:flex-row items-center gap-5 lg:gap-10 mt-10 font-[family-name:var(--font-geist-sans)]">
       <div className="">
-        <Image className="w-[300px]" src={logo} height={300} width={300} alt="logo" />
+        <Image
+          className="w-[300px]"
+          src={logo}
+          height={300}
+          width={300}
+          alt="logo"
+        />
       </div>
       <div className="">
         <div className="text-lg font-semibold tracking-wide">
@@ -31,7 +42,8 @@ export default function ExperienceCard({ logo }) {
             ensuring accurate data transfer and integrity.
           </li>
           <li>
-            Facilitate client requests for data access by managing and processing incoming requests and ensuring timely follow-up.
+            Facilitate client requests for data access by managing and
+            processing incoming requests and ensuring timely follow-up.
           </li>
         </ul>
       </div>

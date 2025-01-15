@@ -42,7 +42,7 @@ export default function Hero() {
   }, [mouseX, mouseY, gradientSize]);
 
   return (
-    <div className="w-screen pt-20 px-8 lg:px-0 lg:pt-40 flex items-center justify-center font-[family-name:var(--font-geist-sans)]">
+    <div className="w-screen pt-40 px-8 lg:px-0 lg:pt-60 flex items-center justify-center font-[family-name:var(--font-geist-sans)]" id="home">
       <motion.div className="relative group flex flex-col lg:flex-row items-center justify-center w-[800px] gap-10 p-10 lg:p-20 rounded-xl shadow-2xl this-div border border-white/10">
         {/* Spotlight Effect */}
         <motion.div

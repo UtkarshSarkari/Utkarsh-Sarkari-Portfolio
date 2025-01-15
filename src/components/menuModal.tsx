@@ -1,13 +1,19 @@
 "use client";
 import { navLinks } from "@/constants/navLinks";
+import Link from "next/link";
 import React, { useState } from "react";
 
 interface MenuModalProps {
   onClose: () => void;
+  activeLink: string;
+  setActiveLink: React.Dispatch<React.SetStateAction<string>>;
 }
 
-export default function MenuModal({ onClose }: MenuModalProps) {
-  const [activeLink, setActiveLink] = useState("Home");
+export default function MenuModal({
+  onClose,
+  activeLink,
+  setActiveLink,
+}: MenuModalProps) {
   return (
     <div
       className="fixed inset-0 bg-black/60 flex items-center justify-center z-50 font-[family-name:var(--font-geist-sans)]"
@@ -20,7 +26,8 @@ export default function MenuModal({ onClose }: MenuModalProps) {
         {/* <h2 className="text-lg font-semibold mb-4">Menu</h2> */}
         <ul className="space-y-6 font-medium">
           {navLinks.map((link) => (
-            <div
+            <Link
+              href={link.url}
               key={link.name}
               onClick={() => setActiveLink(link.name)}
               className={`font-medium cursor-pointer flex gap-2 items-center ${
@@ -29,7 +36,7 @@ export default function MenuModal({ onClose }: MenuModalProps) {
             >
               {link.name}{" "}
               <div className="bg-white/60 h-[2px] w-full rounded-full"></div>
-            </div>
+            </Link>
           ))}
 
           <h5

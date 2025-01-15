@@ -44,19 +44,19 @@ const BentoCard = ({
   <div
     key={name}
     className={cn(
-      "group relative col-span-3 flex flex-col justify-between overflow-hidden rounded-xl",
+      `group relative col-span-3 flex flex-col justify-between overflow-hidden rounded-xl hover:shadow-2xl`,
       // dark styles
-      "transform-gpu [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]",
+      `transform-gpu [border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]`,
       className,
     )}
   >
-    <div>{background}</div>
+    <div className="w-full">{background}</div>
     <div className="pointer-events-none z-10 flex transform-gpu flex-col gap-1 p-6 transition-all duration-300 group-hover:-translate-y-10">
       <Icon className="h-12 w-12 origin-left transform-gpu text-neutral-200 transition-all duration-300 ease-in-out group-hover:scale-75" />
-      <h3 className="text-xl font-semibold text-neutral-200 dark:text-neutral-300">
+      <h3 className="text-xl font-semibold text-neutral-200">
         {name}
       </h3>
-      <p className="max-w-lg text-neutral-400">{description}</p>
+      <p className="max-w-lg text-neutral-200">{description}</p>
     </div>
 
     <div
@@ -65,7 +65,7 @@ const BentoCard = ({
       )}
     >
       <Button variant="ghost" asChild size="sm" className="pointer-events-auto">
-        <a href={href}>
+        <a href={href} target="_blank">
           {cta}
           <ArrowRightIcon className="ml-2 h-4 w-4" />
         </a>

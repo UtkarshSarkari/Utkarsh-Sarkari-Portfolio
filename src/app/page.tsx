@@ -8,9 +8,14 @@ import { useTheme } from "next-themes";
 
 import Particles from "@/components/ui/particles";
 import Projects from "@/pages/Projects";
+import Skills from "@/pages/Skills";
+
+import ScrollProgress from "@/components/ui/scroll-progress";
+import Feedback from "@/pages/Feedback";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState("Home");
 
   const { resolvedTheme } = useTheme();
   const [color, setColor] = useState("#ffffff");
@@ -22,7 +27,7 @@ export default function Home() {
   return (
     <main className="relative overflow-x-hidden overflow-y-hidden">
       <Nav onMenuClick={() => setIsMenuOpen(true)} />
-      {isMenuOpen && <MenuModal onClose={() => setIsMenuOpen(false)} />}
+      {isMenuOpen && <MenuModal onClose={() => setIsMenuOpen(false)} activeLink={activeLink} setActiveLink={setActiveLink} />}
       <Hero />
       <Experience />
       <Particles
@@ -33,6 +38,9 @@ export default function Home() {
         refresh
       />
       <Projects />
+      <Skills />
+      <Feedback />
+      <ScrollProgress className="top-[89px]" />
     </main>
   );
 }

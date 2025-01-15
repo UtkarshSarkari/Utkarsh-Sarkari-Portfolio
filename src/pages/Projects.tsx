@@ -1,66 +1,69 @@
 import React from "react";
 import {
-  BellIcon,
+  ActivityLogIcon,
   CalendarIcon,
-  FileTextIcon,
-  GlobeIcon,
-  InputIcon,
+  ChatBubbleIcon,
+  KeyboardIcon,
+  IdCardIcon,
+  TwitterLogoIcon,
 } from "@radix-ui/react-icons";
 
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 
 const features = [
   {
-    Icon: FileTextIcon,
-    name: "Save your files",
-    description: "We automatically save your files as you type.",
-    href: "/",
+    Icon: TwitterLogoIcon,
+    name: "Knotnet",
+    description:
+      "Full Stack Web Version of Meta’s most recent Threads Application",
+    href: "https://pagenotfound.netlify.app/",
     cta: "Learn more",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
-  },
-  {
-    Icon: InputIcon,
-    name: "Full text search",
-    description: "Search through all your files in one place.",
-    href: "/",
-    cta: "Learn more",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    background: (
+      <img className="absolute opacity-60" src="/images/threads.webp" />
+    ),
     className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3",
   },
   {
-    Icon: GlobeIcon,
-    name: "Multilingual",
-    description: "Supports 100+ languages and counting.",
-    href: "/",
+    Icon: IdCardIcon,
+    name: "Wave Connect",
+    description: "Full Stack Web App for Video Conferencing and Meeting",
+    href: "https://github.com/UtkarshSarkari/wave-connect",
     cta: "Learn more",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    background: <img className="absolute opacity-60" src="/images/wave.png" />,
+    className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
+  },
+  {
+    Icon: ChatBubbleIcon,
+    name: "Conversate",
+    description: "MERN Stack Web Based Real-Time Chat Application",
+    href: "https://github.com/UtkarshSarkari/Conversate",
+    cta: "Learn more",
+    background: <img className="absolute opacity-60" src="/images/chat.png" />,
+    className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
+  },
+  {
+    Icon: ActivityLogIcon,
+    name: "CodexGram",
+    description: "Online Real Time Code Editor",
+    href: "https://github.com/UtkarshSarkari/CodexGram",
+    cta: "Learn more",
+    background: <img className="absolute opacity-60" src="/images/code.webp" />,
     className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
   },
   {
-    Icon: CalendarIcon,
-    name: "Calendar",
-    description: "Use the calendar to filter your files by date.",
-    href: "/",
+    Icon: KeyboardIcon,
+    name: "KeySense",
+    description: "Online Touch Typing Playground",
+    href: "https://github.com/UtkarshSarkari/KeySense",
     cta: "Learn more",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    background: <img className="absolute opacity-60" src="/images/touch.png" />,
     className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",
-  },
-  {
-    Icon: BellIcon,
-    name: "Notifications",
-    description:
-      "Get notified when someone shares a file or mentions you in a comment.",
-    href: "/",
-    cta: "Learn more",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
   },
 ];
 
 export default function Projects() {
   return (
-    <div className="px-8 lg:px-80 pt-20 lg:py-40 font-[family-name:var(--font-geist-sans)]">
+    <div className="px-8 lg:px-80 pt-28 lg:pt-48 font-[family-name:var(--font-geist-sans)]" id="projects">
       <div className="font-extrabold text-white/50 text-5xl lg:text-7xl uppercase tracking-wide text-center leading-[60px] bg-gradient-to-br from-purple-200 via-indigo-800 to-purple-200 bg-clip-text">
         Ideas Executed
       </div>

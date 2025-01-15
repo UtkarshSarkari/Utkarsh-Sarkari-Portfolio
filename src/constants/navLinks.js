@@ -1,26 +1,26 @@
 export const navLinks = [
   {
     name: "Home",
-    url: "/",
+    url: "#home",
     // highlight: false
   },
   {
     name: "Experience",
-    url: "/experience",
+    url: "#experience",
     // highlight: true
   },
   {
     name: "Projects",
-    url: "/projects",
+    url: "#projects",
     // highlight: true
   },
   {
     name: "Skills",
-    url: "/skills",
+    url: "#skills",
     // highlight: false
   },
-//   {
-//     name: "Contact",
-//     url: "/contact",
-//   },
+  {
+    name: "Feedback",
+    url: "#feedback",
+  },
 ];

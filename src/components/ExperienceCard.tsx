@@ -22,7 +22,7 @@ export default function ExperienceCard({ logo }: ExperienceCardProps) {
         <div className="text-lg font-semibold tracking-wide">
           Programmer Analyst
         </div>
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col gap-2 lg:gap-0 lg:flex-row">
           <div className="highlight">Cognizant Technology Solutions &nbsp;</div>
           <div className="text-white/60 text-sm lg:text-base">| Dec, 2023 - Current</div>
         </div>

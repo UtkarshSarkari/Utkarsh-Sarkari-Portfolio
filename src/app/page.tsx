@@ -7,6 +7,7 @@ import Experience from "@/pages/Experience";
 import { useTheme } from "next-themes";
 
 import Particles from "@/components/ui/particles";
+import Projects from "@/pages/Projects";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,6 +32,7 @@ export default function Home() {
         color={color}
         refresh
       />
+      <Projects />
     </main>
   );
 }

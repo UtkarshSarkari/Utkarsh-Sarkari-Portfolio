@@ -1,7 +1,7 @@
 "use client";
 import { navLinks } from "@/constants/navLinks";
 import Link from "next/link";
-import React, { useState } from "react";
+import React from "react";
 
 interface MenuModalProps {
   onClose: () => void;

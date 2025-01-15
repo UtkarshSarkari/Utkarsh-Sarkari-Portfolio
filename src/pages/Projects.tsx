@@ -1,7 +1,6 @@
 import React from "react";
 import {
   ActivityLogIcon,
-  CalendarIcon,
   ChatBubbleIcon,
   KeyboardIcon,
   IdCardIcon,

@@ -10,8 +10,6 @@ import React, {
   useEffect,
   useState,
 } from "react";
-
-import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { cn } from "@/lib/utils";
 
@@ -217,8 +215,7 @@ const Folder = forwardRef<
       isSelect,
       children,
       ...props
-    },
-    ref
+    }
   ) => {
     const {
       direction,
@@ -333,7 +330,7 @@ const CollapseButton = forwardRef<
     expandAll?: boolean;
   } & React.HTMLAttributes<HTMLButtonElement>
 >(({ elements, expandAll = false, children, ...props }, ref) => {
-  const { expandedItems, setExpandedItems } = useTree();
+  const { setExpandedItems } = useTree();
 
   const handleCollapseExpand = () => {
     if (setExpandedItems) {

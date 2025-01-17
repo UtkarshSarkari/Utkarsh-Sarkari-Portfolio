@@ -5,6 +5,7 @@ import Image from "next/image";
 import { socialLinksData } from "@/constants/socialLinksData";
 import Link from "next/link";
 import { motion, useMotionValue, useMotionTemplate } from "framer-motion";
+import Socials from "@/components/Socials";
 
 export default function Hero() {
   const gradientSize = 200;
@@ -42,7 +43,10 @@ export default function Hero() {
   }, [mouseX, mouseY, gradientSize]);
 
   return (
-    <div className="w-screen pt-40 px-8 lg:px-0 lg:pt-60 flex items-center justify-center font-[family-name:var(--font-geist-sans)]" id="home">
+    <div
+      className="w-screen pt-40 px-8 lg:px-0 lg:pt-60 flex items-center justify-center font-[family-name:var(--font-geist-sans)]"
+      id="homemcfx,.fmfd,mg,m,.gfghf,..,m c "
+    >
       <motion.div className="relative group flex flex-col lg:flex-row items-center justify-center w-[800px] gap-10 p-10 lg:p-20 rounded-xl shadow-2xl this-div border border-white/10">
         {/* Spotlight Effect */}
         <motion.div
@@ -94,21 +98,16 @@ export default function Hero() {
             </div>
           </div>
           <div className="text-sm text-white/90 tracking-wide">
-          As a <span className="highlight">Software Engineer</span>, I deliver high-impact web solutions with a focus on quality, scalability, and user experience. <span className="highlight">Proficient in the MERN stack</span>, I specialize in developing robust and user-centric applications that align with business goals and deliver measurable results, leveraging my expertise in full-stack development to create seamless and efficient solutions.
+            As a <span className="highlight">Software Engineer</span>, I deliver
+            high-impact web solutions with a focus on quality, scalability, and
+            user experience.{" "}
+            <span className="highlight">Proficient in the MERN stack</span>, I
+            specialize in developing robust and user-centric applications that
+            align with business goals and deliver measurable results, leveraging
+            my expertise in full-stack development to create seamless and
+            efficient solutions.
           </div>
-          <div className="flex items-center gap-4">
-            {socialLinksData.map((data) => (
-              <Link href={data.url} key={data.url} target="_blank" className="">
-                <Image
-                  className="hover:scale-110 transition-all cursor-pointer"
-                  src={data.img}
-                  height={20}
-                  width={20}
-                  alt="image"
-                />
-              </Link>
-            ))}
-          </div>
+          <Socials classname="gap-5 mt-2" size={20} />
         </div>
       </motion.div>
     </div>

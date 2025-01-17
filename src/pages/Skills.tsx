@@ -2,6 +2,7 @@
 import React from "react";
 import { File, Folder, Tree } from "@/components/ui/file-tree";
 import { IconCloud } from "@/components/ui/icon-cloud";
+import SectionHeading from "@/components/SectionHeading";
 
 const slugs = [
   "typescript",
@@ -42,9 +43,7 @@ export default function Skills() {
   );
   return (
     <div className="px-8 lg:px-80 pt-28 lg:pt-48 font-[family-name:var(--font-geist-sans)]" id="skills">
-      <div className="font-extrabold text-white/50 text-5xl lg:text-7xl uppercase tracking-wide text-center leading-[60px] bg-gradient-to-br from-purple-200 via-indigo-800 to-purple-200 bg-clip-text">
-        Skillset Snapshot
-      </div>
+      <SectionHeading heading="skillset snapshot" />
       <div className="flex gap-10 mt-10 lg:mt-16 items-center justify-center">
         <div className="relative flex h-full w-full md:w-2/3 flex-col items-center justify-center overflow-hidden rounded-lg border bg-white/5">
           <Tree

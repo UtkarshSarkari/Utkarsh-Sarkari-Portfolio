@@ -8,6 +8,7 @@ import {
 } from "@radix-ui/react-icons";
 
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
+import SectionHeading from "@/components/SectionHeading";
 
 const features = [
   {
@@ -63,9 +64,7 @@ const features = [
 export default function Projects() {
   return (
     <div className="px-8 lg:px-80 pt-28 lg:pt-48 font-[family-name:var(--font-geist-sans)]" id="projects">
-      <div className="font-extrabold text-white/50 text-5xl lg:text-7xl uppercase tracking-wide text-center leading-[60px] bg-gradient-to-br from-purple-200 via-indigo-800 to-purple-200 bg-clip-text">
-        Ideas Executed
-      </div>
+      <SectionHeading heading="ideas executed" />
       <BentoGrid className="lg:grid-rows-3 mt-10 lg:mt-16">
         {features.map((feature) => (
           <BentoCard key={feature.name} {...feature} />

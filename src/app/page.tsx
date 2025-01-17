@@ -12,9 +12,12 @@ import Skills from "@/pages/Skills";
 
 import ScrollProgress from "@/components/ui/scroll-progress";
 import Feedback from "@/pages/Feedback";
+import Contact from "@/pages/Contact";
+import ChatModal from "@/components/chatModal";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isChatOpen, setIsChatOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("Home");
 
   const { resolvedTheme } = useTheme();
@@ -27,7 +30,13 @@ export default function Home() {
   return (
     <main className="relative overflow-x-hidden overflow-y-hidden">
       <Nav onMenuClick={() => setIsMenuOpen(true)} />
-      {isMenuOpen && <MenuModal onClose={() => setIsMenuOpen(false)} activeLink={activeLink} setActiveLink={setActiveLink} />}
+      {isMenuOpen && (
+        <MenuModal
+          onClose={() => setIsMenuOpen(false)}
+          activeLink={activeLink}
+          setActiveLink={setActiveLink}
+        />
+      )}
       <Hero />
       <Experience />
       <Particles
@@ -40,6 +49,12 @@ export default function Home() {
       <Projects />
       <Skills />
       <Feedback />
+      <Contact onChatClick={() => setIsChatOpen(true)} />
+      {isChatOpen && (
+        <ChatModal
+          onClose={() => setIsChatOpen(false)}
+        />
+      )}
       <ScrollProgress className="top-[89px]" />
     </main>
   );

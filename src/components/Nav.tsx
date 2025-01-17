@@ -32,11 +32,13 @@ export default function Nav({ onMenuClick }: NavProps) {
             {link.name}
           </Link>
         ))}
-        <h5
+        <Link
+          href="https://utkrshsarkari@gmail.com"
+          target="_blank"
           className={`text-zinc-300 tracking-wider font-light hover:text-white transition-all cursor-pointer bg-white/15 px-3 py-1 rounded-lg flex items-center justify-center`}
         >
           utkrshsarkari@gmail.com
-        </h5>
+        </Link>
       </div>
       <div className="hamMenu lg:hidden">
         <Image

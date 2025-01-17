@@ -1,6 +1,7 @@
 import React from "react";
 import { cn } from "@/lib/utils";
 import Marquee from "@/components/ui/marquee";
+import SectionHeading from "@/components/SectionHeading";
 
 const reviews = [
   {
@@ -79,10 +80,8 @@ const ReviewCard = ({
 
 export default function Feedback() {
   return (
-    <div className="px-8 lg:px-80 py-28 lg:pt-48 lg:pb-40 font-[family-name:var(--font-geist-sans)]" id="feedback">
-      <div className="font-extrabold text-white/50 text-5xl lg:text-7xl uppercase tracking-wide text-center leading-[60px] bg-gradient-to-br from-purple-200 via-indigo-800 to-purple-200 bg-clip-text">
-        Feedback Loop
-      </div>
+    <div className="px-8 lg:px-80 pt-28 md:pt-48 md:pb-40 font-[family-name:var(--font-geist-sans)]" id="feedback">
+      <SectionHeading heading="feedback loop" />
       <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden mt-10 md:mt-16">
         <Marquee pauseOnHover className="[--duration:20s]">
           {firstRow.map((review) => (

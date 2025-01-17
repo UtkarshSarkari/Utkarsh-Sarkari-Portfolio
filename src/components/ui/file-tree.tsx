@@ -215,7 +215,7 @@ const Folder = forwardRef<
       isSelect,
       children,
       ...props
-    }
+    }, ref
   ) => {
     const {
       direction,
@@ -231,6 +231,7 @@ const Folder = forwardRef<
       <Accordion.Item
         {...props}
         value={value}
+        ref={ref}
         className="relative h-full overflow-hidden"
       >
         <Accordion.Trigger

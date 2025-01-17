@@ -2,8 +2,6 @@
 
 import React, { useEffect } from "react";
 import Image from "next/image";
-import { socialLinksData } from "@/constants/socialLinksData";
-import Link from "next/link";
 import { motion, useMotionValue, useMotionTemplate } from "framer-motion";
 import Socials from "@/components/Socials";
 

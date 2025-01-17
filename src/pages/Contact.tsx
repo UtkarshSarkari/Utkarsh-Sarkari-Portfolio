@@ -1,4 +1,3 @@
-import Email from "@/components/Email";
 import SectionHeading from "@/components/SectionHeading";
 import Socials from "@/components/Socials";
 import React from "react";

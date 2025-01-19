@@ -1,8 +1,7 @@
 "use client";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import Lottie from "lottie-react";
-import animationData from "../../public/icons/loader.json";
+import Image from "next/image";
 
 interface MenuModalProps {
   onClose: () => void;
@@ -64,9 +63,9 @@ export default function ChatModal({ onClose }: MenuModalProps) {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="text-sm flex flex-col gap-4"
+          className="text-sm flex flex-col gap-5"
         >
-          <div className="flex justify-between">
+          <div className="flex flex-col xl:flex-row gap-4 xl:gap-0 justify-between">
             <div className="flex flex-col gap-1">
               <label htmlFor="name">Name</label>
               <input
@@ -89,7 +88,14 @@ export default function ChatModal({ onClose }: MenuModalProps) {
             </div>
           </div>
           {isLoading ? (
-            <Lottie className="h-[194px]" animationData={animationData} />
+            <div className="w-full h-[194px] flex items-center justify-center">
+              <Image
+                src="/images/sendLottie.gif"
+                height={50}
+                width={50}
+                alt="loader"
+              />
+            </div>
           ) : (
             <textarea
               name="message"

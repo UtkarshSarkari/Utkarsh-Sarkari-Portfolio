@@ -56,9 +56,9 @@ export default function Nav({ onMenuClick }: NavProps) {
       <div className="hamMenu lg:hidden">
         <Image
           className=""
-          src="/icons/menu5.png"
-          height={38}
-          width={38}
+          src="/icons/menu.svg"
+          height={40}
+          width={40}
           alt="hamMenu"
           onClick={onMenuClick}
         />

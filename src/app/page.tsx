@@ -37,8 +37,15 @@ export default function Home() {
           setActiveLink={setActiveLink}
         />
       )}
-      <Hero />
-      <Experience />
+      <Hero onChatClick={() => setIsChatOpen(true)} />
+      <div className="px-8 sm:px-14 lg:px-20 xl:px-80">
+        <Experience />
+        <Projects />
+        <Skills />
+        <Feedback />
+        <Contact onChatClick={() => setIsChatOpen(true)} />
+        {isChatOpen && <ChatModal onClose={() => setIsChatOpen(false)} />}
+      </div>
       <Particles
         className="absolute inset-0 z-0"
         quantity={100}
@@ -46,15 +53,6 @@ export default function Home() {
         color={color}
         refresh
       />
-      <Projects />
-      <Skills />
-      <Feedback />
-      <Contact onChatClick={() => setIsChatOpen(true)} />
-      {isChatOpen && (
-        <ChatModal
-          onClose={() => setIsChatOpen(false)}
-        />
-      )}
       <ScrollProgress className="top-[89px]" />
     </main>
   );

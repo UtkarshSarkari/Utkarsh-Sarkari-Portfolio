@@ -80,7 +80,7 @@ const ReviewCard = ({
 
 export default function Feedback() {
   return (
-    <div className="px-8 lg:px-80 pt-28 md:pt-48 md:pb-40 font-[family-name:var(--font-geist-sans)]" id="feedback">
+    <div className="pt-28 md:pt-48 lg:pb-40 font-[family-name:var(--font-geist-sans)]" id="feedback">
       <SectionHeading heading="feedback loop" />
       <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden mt-10 md:mt-16">
         <Marquee pauseOnHover className="[--duration:20s]">

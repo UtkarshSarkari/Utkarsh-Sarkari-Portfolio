@@ -8,7 +8,7 @@ interface NavProps {
 
 export default function Contact({ onChatClick }: NavProps) {
   return (
-    <div className="px-8 lg:px-80 py-28 font-[family-name:var(--font-geist-sans)] md:hidden" id="contact">
+    <div className="py-28 font-[family-name:var(--font-geist-sans)] lg:hidden" id="contact">
       <SectionHeading heading="My digital presence" />
       <div className="flex flex-col gap-8">
         <Socials classname="justify-around mt-10" size={25} />

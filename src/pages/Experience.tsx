@@ -6,7 +6,7 @@ import SectionHeading from "@/components/SectionHeading";
 export default function Experience() {
   return (
     <div
-      className="px-8 lg:px-80 pt-28 lg:pt-48 font-[family-name:var(--font-geist-sans)]"
+      className="pt-28 lg:pt-48 font-[family-name:var(--font-geist-sans)]"
       id="experience"
     >
       <SectionHeading heading="career highlights" />

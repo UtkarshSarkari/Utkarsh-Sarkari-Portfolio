@@ -5,7 +5,11 @@ import Image from "next/image";
 import { motion, useMotionValue, useMotionTemplate } from "framer-motion";
 import Socials from "@/components/Socials";
 
-export default function Hero() {
+interface NavProps {
+  onChatClick: () => void;
+}
+
+export default function Hero({ onChatClick }: NavProps) {
   const gradientSize = 200;
   const spotlightColor = "#444"; // Darker color for the spotlight (grayish)
   const borderGradientFrom = "#9E7AFF";
@@ -42,8 +46,8 @@ export default function Hero() {
 
   return (
     <div
-      className="w-screen pt-40 px-8 lg:px-0 lg:pt-60 flex items-center justify-center font-[family-name:var(--font-geist-sans)]"
-      id="homemcfx,.fmfd,mg,m,.gfghf,..,m c "
+      className="w-screen pt-40 px-8 sm:px-14 md:px-20 lg:px-0 lg:pt-60 flex items-center justify-center font-[family-name:var(--font-geist-sans)]"
+      id="home"
     >
       <motion.div className="relative group flex flex-col lg:flex-row items-center justify-center w-[800px] gap-10 p-10 lg:p-20 rounded-xl shadow-2xl this-div border border-white/10">
         {/* Spotlight Effect */}
@@ -105,7 +109,15 @@ export default function Hero() {
             my expertise in full-stack development to create seamless and
             efficient solutions.
           </div>
-          <Socials classname="gap-5 mt-2" size={20} />
+          <div className="flex items-center gap-5">
+            <Socials classname="gap-5 mt-2" size={20} />
+            <div
+              className="bg-white/10 mt-2 px-4 py-1 text-sm rounded-md cursor-pointer hidden sm:flex"
+              onClick={onChatClick}
+            >
+              Get In Touch
+            </div>
+          </div>
         </div>
       </motion.div>
     </div>

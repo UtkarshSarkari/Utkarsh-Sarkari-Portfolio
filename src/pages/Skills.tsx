@@ -42,7 +42,7 @@ export default function Skills() {
     (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`
   );
   return (
-    <div className="px-8 lg:px-80 pt-28 lg:pt-48 font-[family-name:var(--font-geist-sans)]" id="skills">
+    <div className="pt-28 lg:pt-48 font-[family-name:var(--font-geist-sans)]" id="skills">
       <SectionHeading heading="skillset snapshot" />
       <div className="flex gap-10 mt-10 lg:mt-16 items-center justify-center">
         <div className="relative flex h-full w-full md:w-2/3 flex-col items-center justify-center overflow-hidden rounded-lg border bg-white/5">

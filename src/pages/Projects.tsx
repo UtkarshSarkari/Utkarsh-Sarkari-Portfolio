@@ -63,7 +63,7 @@ const features = [
 
 export default function Projects() {
   return (
-    <div className="px-8 lg:px-80 pt-28 lg:pt-48 font-[family-name:var(--font-geist-sans)]" id="projects">
+    <div className="pt-28 lg:pt-48 font-[family-name:var(--font-geist-sans)]" id="projects">
       <SectionHeading heading="ideas executed" />
       <BentoGrid className="lg:grid-rows-3 mt-10 lg:mt-16">
         {features.map((feature) => (

@@ -2,29 +2,31 @@ export const navLinks = [
   {
     name: "Home",
     url: "#home",
-    // highlight: false
+    availability: "all",
   },
   {
     name: "Experience",
     url: "#experience",
-    // highlight: true
+    availability: "all",
   },
   {
     name: "Projects",
     url: "#projects",
-    // highlight: true
+    availability: "all",
   },
   {
     name: "Skills",
     url: "#skills",
-    // highlight: false
+    availability: "all",
   },
   {
     name: "Feedback",
     url: "#feedback",
+    availability: "mobile",
   },
   {
     name: "Contact",
     url: "#contact",
+    availability: "mobile",
   },
 ];

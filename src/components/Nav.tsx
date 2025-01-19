@@ -57,8 +57,8 @@ export default function Nav({ onMenuClick }: NavProps) {
         <Image
           className=""
           src="/icons/menu.svg"
-          height={40}
-          width={40}
+          height={38}
+          width={38}
           alt="hamMenu"
           onClick={onMenuClick}
         />
